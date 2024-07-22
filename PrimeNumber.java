@@ -1,4 +1,4 @@
-public class PRimeNumber {
+public class PrimeNumber {
     public static void main(String[] args) {
         int n = 7;
         if (n == 2) {
