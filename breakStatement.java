@@ -14,5 +14,6 @@ public class breakStatement {
             }
 
         }
+        sc.close();
     }
 }

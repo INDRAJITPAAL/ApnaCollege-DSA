@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class CheckPrimeNumber {
     public static boolean checkPrime(int n) {

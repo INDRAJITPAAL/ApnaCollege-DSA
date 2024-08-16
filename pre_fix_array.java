@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class pre_fix_array {
     public static void prefixArray(int arr[]) {
@@ -6,7 +5,7 @@ public class pre_fix_array {
         int prefixarr[] = new int[arr.length];
         int maxSum = Integer.MIN_VALUE;
         int currSum = 0;
-        
+
         // prefix sum
         prefixarr[0] = arr[0];
         for (int i = 1; i < arr.length; i++) {

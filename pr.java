@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class pr {
     public static void subArraySum(int arr[]) {
@@ -6,15 +5,19 @@ public class pr {
             int start = i;
             for (int j = i; j < arr.length; j++) {
                 int end = j;
+                int sum = 0;
                 for (int k = start; k <= end; k++) {
-                    System.out.print(arr[k]);
+                    System.out.print(arr[k] + ",");
+                    sum += arr[k];
                 }
+                System.out.println(" -> sum is = " + sum);
             }
+            System.out.println();
         }
     }
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 3, 4, 5 };
-        System.out.println(prefixArray(arr));
+        subArraySum(arr);
     }
 }

@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class sub_array_sum {
 

@@ -13,6 +13,7 @@ public class MUltipleOf10Comtimue {
                 System.out.println(userNo);
 
             }
+            sc.close();
         }
     }
 }

@@ -1,6 +1,6 @@
 public class checkNumberTwice {
 
-    public static boolean checkNumberTwice(int number[], int element) {
+    public static boolean checkNumberTwoTimes(int number[], int element) {
         int count = 0;
         for (int i = 0; i < number.length; i++) {
             if (number[i] == element) {
@@ -16,6 +16,11 @@ public class checkNumberTwice {
     public static void main(String[] args) {
         int number[] = { 1, 2, 3, 1 };
         int element = 1;
-        System.out.println(checkNumberTwice(number, element));
+        if (checkNumberTwoTimes(number, element)) {
+            System.out.println("true");
+
+        } else {
+            System.out.println("false");
+        }
     }
 }

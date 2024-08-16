@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class binary_search {
     public static int binarySearch(int arr[], int key) {
         int start = 0;

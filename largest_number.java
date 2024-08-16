@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class largest_number {
     public static int largestNumber(int number[]) {

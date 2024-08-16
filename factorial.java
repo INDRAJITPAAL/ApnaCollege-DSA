@@ -9,6 +9,7 @@ public class factorial {
             facto *= i;
         }
         System.out.println("Factorial of " + Num + " is = " + facto);
+        sc.close();
 
     }
 }

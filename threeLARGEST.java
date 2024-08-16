@@ -13,5 +13,6 @@ public class threeLARGEST {
     } else {
       System.out.println(c);
     }
+    sc.close();
   }
 }

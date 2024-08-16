@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class evenoddSum {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int oddSum = 0;
         int evenSum = 0;
@@ -17,6 +17,7 @@ public class evenoddSum {
         }
         System.out.println(evenSum + " evenSum ");
         System.out.println(oddSum + " oddSum ");
+        sc.close();
     }
-    
+
 }

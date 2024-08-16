@@ -1,5 +1,5 @@
 public class trappedRainWater {
-    public static int trappedRainWater(int hight[]) {
+    public static int tRappedRainWater(int hight[]) {
         // helping array
 
         // leftmax
@@ -32,7 +32,7 @@ public class trappedRainWater {
     public static void main(String[] args) {
 
         int hight[] = { 4, 2, 0, 6, 3, 2, 5 };
-        System.out.println(trappedRainWater(hight));
+        System.out.println(tRappedRainWater(hight));
 
     }
 }

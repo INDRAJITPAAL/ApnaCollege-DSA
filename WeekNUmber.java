@@ -31,6 +31,7 @@ public class WeekNUmber {
             System.out.println(numW + "invalid week number");
                 break;
         }
+        sc.close();
 
     }
 }

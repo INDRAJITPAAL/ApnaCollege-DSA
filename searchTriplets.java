@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 public class searchTriplets {
     public static void printTriplets(int arr[]) {
