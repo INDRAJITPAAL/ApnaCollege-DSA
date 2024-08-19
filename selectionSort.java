@@ -16,7 +16,7 @@ public class selectionSort {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 5, 4, 3, 2, 1 };
+        int arr[] = {3, 6, 2, 1, 8, 7, 4, 5, 3, 1 };
         sSort(arr);
         for(int A:arr){
             System.out.print(A+" ");

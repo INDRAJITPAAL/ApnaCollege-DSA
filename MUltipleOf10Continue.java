@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MUltipleOf10Comtimue {
+public class MUltipleOf10Continue {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,7 +13,7 @@ public class MUltipleOf10Comtimue {
                 System.out.println(userNo);
 
             }
-            sc.close();
         }
+      
     }
 }

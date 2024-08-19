@@ -1,11 +1,9 @@
-import java.util.*;
 
 public class threeLARGEST {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int a = 20554450;
-    int b = 7978;
-    int c = 30874;
+    int a = 100;
+    int b = 0;
+    int c = 355;
     if (a > b && a > c) {
       System.out.println(a);
     } else if (b > a && b > c) {
@@ -13,6 +11,5 @@ public class threeLARGEST {
     } else {
       System.out.println(c);
     }
-    sc.close();
   }
 }
