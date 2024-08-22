@@ -15,10 +15,10 @@ public class countingSort {
 
         int j = 0;
         for (int i = 0; i < count.length; i++) {
-            while (count[i] > 0) {
-                arr[j++] = i;
-                count[i]--;
-            }
+           if(count[i]>0){
+            arr[j++] = i;
+            count[i]--;
+           }
         }
     }
 

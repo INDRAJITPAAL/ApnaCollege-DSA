@@ -13,7 +13,7 @@ public class MUltipleOf10Continue {
                 System.out.println(userNo);
 
             }
+            sc.close();
         }
-      
     }
 }
