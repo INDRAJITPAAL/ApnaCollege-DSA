@@ -1,5 +1,5 @@
 
-public class pr {
+public class printSumStringAndThierSum {
     public static void subArraySum(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
             int start = i;
