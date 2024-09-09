@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class mergeSort {
 
-    public static void mergeSort(int arr[], int i, int mid, int j) {
+    public static void mergeSorts(int arr[], int i, int mid, int j) {
         int p1 = i;
         int p2 = mid + 1;
         int hArr[] = new int[j - i + 1];
@@ -35,7 +35,7 @@ public class mergeSort {
         int mid = (i + j) / 2;
         divide(arr, i, mid);
         divide(arr, mid + 1, j);
-        mergeSort(arr, mid, i, j);
+        mergeSorts(arr, mid, i, j);
     }
 
     public static void main(String[] args) {

@@ -6,6 +6,6 @@ public class clearIthBitOperationInBinary {
     }
 
     public static void main(String[] args) {
-        System.out.println(clearIth(10, 1));
+        System.out.println(clearIth(10, 3));
     }
 }

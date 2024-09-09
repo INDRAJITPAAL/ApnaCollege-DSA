@@ -1,16 +1,36 @@
 public class practice {
-    public static boolean checkStringPalindromeOrNot(String str) {
-
-        for (int i = 0; i < str.length()/2; i++) {
-            if (str.charAt(i) != str.charAt(str.length() - 1 - i)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
     public static void main(String[] args) {
-        String str = "racecar";
-        System.out.println(checkStringPalindromeOrNot(str));
+        Deer d=new Deer();
+        d.canThink();
     }
+}
+
+//interface practice 
+interface Animal{
+    void walk();
+    // void talk();
+    // void eat();
+    // void breathTime();
+    // void skinColor();
+
+}
+
+interface Human{
+// void hight();
+void canThink();
+}
+
+
+class Deer implements Animal,Human{
+    public void walk(){
+        System.out.println("Deer walk with 4 legs");
+    }
+    public void canThink(){
+        System.out.println("Deer cannot think");
+    }
+
+
+
+
+     
 }

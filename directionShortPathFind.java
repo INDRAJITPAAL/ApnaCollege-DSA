@@ -3,7 +3,7 @@ public class directionShortPathFind {
         int X = 0;
         int Y = 0;
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == 'N') {c
+            if (str.charAt(i) == 'N') {
                 X++;
             } else if (str.charAt(i) == 'E') {
                 Y++;
