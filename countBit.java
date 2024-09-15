@@ -12,7 +12,8 @@ public class countBit {
 
     public static void main(String[] args) {
 
-        System.out.println(countBit1(7));
+        System.out.println(countBit1(8));
 
     }
 }
+    

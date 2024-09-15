@@ -29,6 +29,7 @@ public class t {
    }
 
    public static void main(String[] args) {
+      // preRequisite atleast half is sorted or rotated array
       int arr[] = { 4, 5, 6, 7, 0, 1, 2 };
       System.out.println(findTarget(arr, 6));
    }

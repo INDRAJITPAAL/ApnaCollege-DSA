@@ -1,4 +1,4 @@
-public class usingCountTechnicToFindAngram {
+public class usingCountTechnicToFindAnagram {
     public static void anagramUsingCountingMethod(String str1, String str2) {
         if (str1.length() != str2.length()) {
             System.out.println("this value are not an angram");

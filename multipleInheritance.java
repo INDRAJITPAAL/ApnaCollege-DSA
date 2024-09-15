@@ -1,30 +1,32 @@
 public class multipleInheritance {
     public static void main(String[] args) {
-        Bear b = new Bear();
-        b.swim();
+        Deer d = new Deer();
+        d.canThink();
     }
 }
 
-interface A {
-    void eat();
-
+// interface practice
+interface Animal {
     void walk();
+    // void talk();
+    // void eat();
+    // void breathTime();
+    // void skinColor();
+
 }
 
-interface B {
-    void swim();
+interface Human {
+    // void hight();
+    void canThink();
 }
 
-class Bear implements A, B {
-    public void eat() {
-        System.out.println("eat both grass and meat");
-    }
-
+class Deer implements Animal, Human {
     public void walk() {
-        System.out.println("bear walk with 4 legs");
+        System.out.println("Deer walk with 4 legs");
     }
 
-    public void swim() {
-        System.out.println("bear can swim");
+    public void canThink() {
+        System.out.println("Deer cannot think");
     }
+
 }

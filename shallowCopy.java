@@ -9,6 +9,9 @@ public class shallowCopy {
         System.out.println(p1.mark[0]);
         System.out.println(p2.mark[0]);
     }
+
+    public String name;
+    public int[] mark;
 }
 
 class Person {
