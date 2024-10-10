@@ -2,46 +2,51 @@ import java.util.Arrays;
 
 public class mergeSort {
 
-    public static void mergeSorts(int arr[], int i, int mid, int j) {
-        int p1 = i;
-        int p2 = mid + 1;
-        int hArr[] = new int[j - i + 1];
-        int idx = 0;
-        while (p1 <= mid && p2 <= j) {
-            if (arr[p1] < arr[p2]) {
-                hArr[idx++] = arr[p1];
-                p1++;
-            } else {
-                hArr[idx++] = arr[p2];
-                p2++;
-            }
-
-        }
-        while(p1<=mid){
-            hArr[idx++] = arr[p1];
-            p1++;
-        }
-        while(p2<=j){
-            hArr[idx++] = arr[p2];
-            p2++;
-        }
-
-    }
-
-    private static void divide(int[] arr, int i, int j) {
-        if (i == j) {
+    public static void mergeSorT(int arr[], int si, int ei) {
+        if (si >= ei) {
             return;
         }
-        int mid = (i + j) / 2;
-        divide(arr, i, mid);
-        divide(arr, mid + 1, j);
-        mergeSorts(arr, mid, i, j);
+        int mid = si + (ei - si) / 2;
+        mergeSorT(arr, si, mid);
+        mergeSorT(arr, mid + 1, ei);
+        merge(arr, si, mid, ei);
+
     }
 
+    public static void merge(int arr[], int si, int mid, int ei) {
+        int temp[] = new int[ei - si + 1];
+        int i = si;
+        int j = mid + 1;
+        int k = 0;
+        
+        // Merging the two halves
+        while (i <= mid && j <= ei) {
+            if (arr[i] < arr[j]) {
+                temp[k++] = arr[i++];
+            } else {
+                temp[k++] = arr[j++];
+            }
+        }
+        
+        // Copy remaining elements from the left half, if any
+        while (i <= mid) {
+            temp[k++] = arr[i++];
+        }
+        
+        // Copy remaining elements from the right half, if any
+        while (j <= ei) {
+            temp[k++] = arr[j++];
+        }
+        
+        // Copy sorted elements back to original array
+        for (k = 0, i =si; k < temp.length; k++, i++) {
+            arr[i] = temp[k];
+        }
+    }
+    
     public static void main(String[] args) {
-        int arr[] = { 7, 6, 2, 1, 9, 5, 4, 3, 8 };
-        System.out.println(Arrays.toString(arr));
-        divide(arr, 0, arr.length - 1);
+        int arr[] = {6,4,6,2,1};
+        mergeSorT(arr, 0, arr.length-1);
         System.out.println(Arrays.toString(arr));
 
     }

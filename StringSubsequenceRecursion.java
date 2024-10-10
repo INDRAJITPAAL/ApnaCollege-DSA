@@ -1,28 +1,21 @@
-import java.util.ArrayList;
 
 public class StringSubsequenceRecursion {
-    public static ArrayList<String> strSubsequence(String str) {
-        ArrayList<String> ans = new ArrayList<>();
-        if (str.isEmpty()) {
-            ans.add("");
-            return ans;
+    public static void subSeq(String str, int idx, String newStr) {
+        if (idx == str.length()) {
+            System.out.println(newStr);
+            return;
         }
 
-        char ch = str.charAt(0);
-        ArrayList<String> ss = strSubsequence(str.substring(1));
-        for (String a : ss) {
-            ans.add(a);
-            ans.add((ch + a));
-        }
-
-        return ans;
-
+        // to be
+        subSeq(str, idx + 1, newStr + (str.charAt(idx)));
+        // do not be
+        subSeq(str, idx + 1, newStr);
     }
 
     public static void main(String[] args) {
-        for (String s : strSubsequence("abc")) {
-            System.out.print(s + " ");
-        }
+        String str = "abc";
+        subSeq(str, 0, (""));
     }
 }
- 
+// important from apnacollege code
+

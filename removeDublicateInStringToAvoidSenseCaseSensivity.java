@@ -1,26 +1,23 @@
 public class removeDublicateInStringToAvoidSenseCaseSensivity {
-    public static void removeDublicate(String str, int idx, StringBuffer newstr, boolean map[]) {
-        // base case
-        if (idx == str.length() - 1) {
-            System.out.println(newstr);
+    public static void removeDublicate(String str, int idx, boolean map[], StringBuilder newStr) {
+        if (idx == str.length()) {
+            System.out.println(newStr);
             return;
         }
-        // to avoid case sensivity with lowercase
-        char ch = Character.toLowerCase(str.charAt(idx));
-        // check map array is true or not
-        if (map[ch - 'a']) {
-            removeDublicate(str, idx + 1, newstr, map);
-        } else {
-            newstr.append(ch);
-            map[ch - 'a'] = true;
-            removeDublicate(str, idx + 1, newstr, map);
-        }
+        char curr = Character.toLowerCase(str.charAt(idx));
+        if (map[curr - 'a'] == false) {
+            map[curr - 'a'] = true;
+            newStr.append(curr);
+            removeDublicate(str, idx + 1, map, newStr);
 
+        } else {
+            removeDublicate(str, idx + 1, map, newStr);
+        }
     }
 
     public static void main(String[] args) {
         String str = "ApnaCollege";
-        removeDublicate(str, 0, new StringBuffer(""), new boolean[26]);
+        removeDublicate(str, 0, new boolean[26], new StringBuilder(""));
 
     }
 }
