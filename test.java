@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class test {
     public static int pow2(int a, int n) {
@@ -14,6 +14,6 @@ public class test {
     }
 
     public static void main(String[] args) {
-        System.out.println(pow2(2, 2));
+        System.out.println("indrajit pal");
     }
 }
