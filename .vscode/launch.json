@@ -1,0 +1,83 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "plusOne",
+            "request": "launch",
+            "mainClass": "leetCode.plusOne",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "MostFrequentNumberFollowing",
+            "request": "launch",
+            "mainClass": "ArrayList.MostFrequentNumberFollowing",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "lonlyApearInArrayList",
+            "request": "launch",
+            "mainClass": "lonlyApearInArrayList",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "arrIsmonotonic",
+            "request": "launch",
+            "mainClass": "ArrayList.arrIsmonotonic",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "pairSum2SortedAndRotedArr",
+            "request": "launch",
+            "mainClass": "ArrayList.pairSum2SortedAndRotedArr",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "pairSumTwoPointerApproach",
+            "request": "launch",
+            "mainClass": "ArrayList.pairSumTwoPointerApproach",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "pairSum",
+            "request": "launch",
+            "mainClass": "ArrayList.pairSum",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "containerWithMostWaterTwoPinterAproach",
+            "request": "launch",
+            "mainClass": "ArrayList.containerWithMostWaterTwoPinterAproach",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "containerWithMostWater",
+            "request": "launch",
+            "mainClass": "ArrayList.containerWithMostWater",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "ApnaCollege-DSA_124be0cd"
+        },
+        {
+            "type": "jdk",
+            "request": "launch",
+            "name": "Launch Java App"
+        }
+    ]
+}
